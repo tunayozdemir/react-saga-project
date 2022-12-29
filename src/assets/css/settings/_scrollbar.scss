@@ -1,0 +1,23 @@
+@import "src/assets/css/settings/colors";
+
+/* Firefox */
+* {
+  scrollbar-width: none;
+  scrollbar-color: $basic-400 $white;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+*::-webkit-scrollbar-track {
+  background: #ffffff;
+}
+
+*::-webkit-scrollbar-thumb {
+  background-color: $basic-400;
+  border-radius: 10px;
+  border: 2px solid $white;
+}

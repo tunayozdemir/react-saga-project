@@ -1,0 +1,59 @@
+{
+  "name": "react-saga-project",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "@reduxjs/toolkit": "^1.9.1",
+    "@testing-library/jest-dom": "^5.16.5",
+    "@testing-library/react": "^13.4.0",
+    "@testing-library/user-event": "^13.5.0",
+    "antd": "^4.20.6",
+    "antd-mask-input": "^2.0.7",
+    "axios": "^1.2.2",
+    "classnames": "^2.3.2",
+    "node-sass": "^8.0.0",
+    "node-watch-changes": "^2.0.3",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-jwt": "^1.1.7",
+    "react-redux": "^8.0.5",
+    "react-router-dom": "^6.6.1",
+    "react-scripts": "5.0.1",
+    "redux-devtools-extension": "^2.13.9",
+    "redux-saga": "^1.2.2",
+    "swiper": "^8.4.5",
+    "web-vitals": "^2.1.4"
+  },
+  "scripts": {
+    "start": "craco start & node src/tasks/watch.js",
+    "build": "craco build",
+    "test": "craco test",
+    "eject": "craco eject",
+    "icon": "node src/tasks/iconFont.js"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@craco/craco": "^7.0.0",
+    "iconfont-maker": "^0.0.7",
+    "sass": "^1.57.1"
+  }
+}

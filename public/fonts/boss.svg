@@ -1,0 +1,15 @@
+<?xml version="1.0" standalone="no"?> 
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd" >
+<svg xmlns="http://www.w3.org/2000/svg">
+<defs>
+  <font id="boss" horiz-adv-x="24">
+    <font-face font-family="boss"
+      units-per-em="24" ascent="24"
+      descent="0" />
+    <missing-glyph horiz-adv-x="0" />
+    <glyph glyph-name="arrow-down"
+      unicode="&#xF101;"
+      horiz-adv-x="24" d=" M8.125 15L12.005 11.12L15.885 15A0.996 0.996 0 1 0 17.295 13.59L12.705 9A0.996 0.996 0 0 0 11.295 9L6.705 13.59A0.996 0.996 0 0 0 6.705 15C7.095 15.38 7.735 15.39 8.125 15z" />
+  </font>
+</defs>
+</svg>
