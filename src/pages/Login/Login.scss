@@ -1,0 +1,108 @@
+@import "src/assets/css/settings/colors";
+
+.login {
+  display: flex;
+  height: 100vh;
+
+  &__logo {
+    position: absolute;
+    top: 80px;
+    left: 83px;
+    display: flex;
+    align-items: center;
+
+    span {
+      width: 45px;
+      height: 45px;
+      background: $primary-500;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: $white;
+      border-radius: 4px;
+      margin-right: 22px;
+    }
+
+    h1 {
+      margin-bottom: 0;
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.23;
+      color: $basic-900;
+    }
+  }
+
+  &__content {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    &__title {
+      align-self: flex-start;
+      font-size: 14px;
+      font-weight: bold;
+      line-height: 1.14;
+      margin-bottom: 27px;
+      color: $basic-600;
+    }
+  }
+
+  &__form {
+    width: 343px;
+
+    .ant-btn {
+      margin-bottom: 14px;
+    }
+
+    h3 {
+      font-size: 26px;
+      font-weight: bold;
+      line-height: 1.23;
+      margin-bottom: 40px;
+      color: $basic-900;
+    }
+  }
+
+  &__service-selection {
+    .ant {
+      &-form-item {
+        margin-bottom: 22px;
+      }
+
+      &-radio {
+        &-button-wrapper {
+          min-width: 104px;
+          margin-right: 15px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .swiper {
+    &-content {
+      width: 50%;
+    }
+
+    &-slide {
+      &::before {
+        content: "";
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0) 50%, rgba(0, 0, 0, 0.7));
+        position: absolute;
+      }
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+  }
+}

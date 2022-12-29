@@ -1,0 +1,27 @@
+@import "src/assets/css/settings/colors";
+
+.otp-inputs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  .ant-input {
+    width: 43.7px;
+    padding: 0;
+    margin-right: 16.1px;
+    height: 40px;
+    text-align: center;
+    border: 0;
+    border-bottom: 3px solid $basic-900;
+    border-radius: 0;
+
+    &:hover {
+      background: transparent !important;
+      border-color: $basic-900 !important;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}

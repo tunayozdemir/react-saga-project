@@ -1,0 +1,37 @@
+@import "src/assets/css/settings/colors";
+
+.swiper {
+  height: 100%;
+  
+  &-container {
+    height: 100%;
+  }
+
+  &-pagination {
+    display: flex;
+    position: absolute;
+    bottom: 87px;
+    right: 60px;
+    z-index: 2;
+
+    &-bullet {
+      width: 8px;
+      height: 7px;
+      border-radius: 100%;
+      background-color: $white;
+      display: block;
+      margin-left: 10px;
+      transition: .5s ease all;
+
+      &:first-child {
+        margin-left: 0;
+      }
+  
+      &-active {
+        background-color: $primary-500;
+        width: 25px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

@@ -1,0 +1,612 @@
+@import "src/assets/css/settings/colors";
+
+.ant-btn {
+  $self: &;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 99px;
+  height: 40px;
+  padding: 9px;
+  border-radius: 8px;
+  background: $primary-500;
+  border-color: $primary-500;
+
+  &:hover {
+    background: $primary-400;
+    border-color: $primary-400;
+
+    .icon,
+    span {
+      color: $basic-100;
+    }
+  }
+
+  &:active {
+    background: $primary-600;
+    border-color: $primary-600;
+  }
+
+  &:focus {
+    border: 1px solid $primary-700;
+    background: $primary-600;
+    outline: $basic-500;
+  }
+
+  &-background-ghost {
+    background-color: inherit;
+  }
+
+  &-loading {
+    min-width: 99px !important;
+
+    &:before {
+      opacity: 1;
+      background: transparent;
+    }
+
+    .anticon-loading {
+      font-size: 24px;
+      color: $white !important;
+    }
+  }
+
+  &#{$self}-outline {
+    background: #fff4eb;
+    border-color: transparent;
+
+    &:hover {
+      background: $primary-500-transparent-16;
+      border-color: transparent;
+    }
+
+    &:active,
+    &:focus {
+      background: $primary-500-transparent-24;
+      border-color: transparent;
+    }
+
+    &#{$self}-background-ghost {
+      background: transparent !important;
+
+      &:hover {
+        background: $basic-500-transparent-08 !important;
+      }
+
+      &:active {
+        background: $basic-500-transparent-16 !important;
+      }
+
+      &:focus {
+        background: $basic-500-transparent-16 !important;
+        border-color: $basic-500-transparent-40;
+        outline: $basic-500;
+      }
+    }
+
+    .anticon-loading {
+      color: $primary-500 !important;
+    }
+
+    &.ant-btn {
+      span,
+      .icon {
+        color: $primary-500;
+      }
+    }
+  }
+
+  &-basic {
+    background: $basic-200;
+    border-color: $basic-200;
+
+    &:hover {
+      background: $basic-100;
+      border-color: $basic-100;
+    }
+
+    &:active {
+      background: $basic-300;
+      border-color: $basic-300;
+    }
+
+    &:focus {
+      border: 1px solid $basic-400;
+      background: $basic-300;
+      outline: $basic-500;
+    }
+
+    &.ant-btn {
+      span,
+      .icon {
+        color: $basic-900;
+      }
+    }
+
+    &#{$self}-outline {
+      background: $basic-500-transparent-08;
+      border-color: transparent;
+
+      &:hover {
+        background: $basic-500-transparent-16;
+        border-color: transparent;
+      }
+
+      &:active,
+      &:focus {
+        background: $basic-500-transparent-24;
+        border-color: transparent;
+      }
+
+      &#{$self}-background-ghost {
+        background: transparent !important;
+
+        &:hover {
+          background: $basic-500-transparent-08 !important;
+        }
+
+        &:active {
+          background: $basic-500-transparent-16 !important;
+        }
+
+        &:focus {
+          background: $basic-500-transparent-16 !important;
+          border-color: $basic-500-transparent-40;
+          outline: $basic-500;
+        }
+      }
+
+      .anticon-loading {
+        color: $basic-500 !important;
+      }
+
+      &.ant-btn {
+        span,
+        .icon {
+          color: $basic-900;
+        }
+      }
+    }
+  }
+
+  &-success {
+    background: $success-500;
+    border-color: $success-500;
+
+    &:hover {
+      background: $success-400;
+      border-color: $success-400;
+    }
+
+    &:active {
+      background: $success-600;
+      border-color: $success-600;
+    }
+
+    &:focus {
+      border: 1px solid $success-700;
+      background: $success-600;
+      outline: $basic-500;
+    }
+
+    &#{$self}-outline {
+      background: $success-500-transparent-08;
+      border-color: transparent;
+
+      &:hover {
+        background: $success-500-transparent-16;
+        border-color: transparent;
+      }
+
+      &:active,
+      &:focus {
+        background: $success-500-transparent-24;
+        border-color: transparent;
+      }
+
+      &#{$self}-background-ghost {
+        background: transparent !important;
+
+        &:hover {
+          background: $basic-500-transparent-08 !important;
+        }
+
+        &:active {
+          background: $basic-500-transparent-16 !important;
+        }
+
+        &:focus {
+          background: $basic-500-transparent-16 !important;
+          border-color: $basic-500-transparent-40;
+          outline: $basic-500;
+        }
+      }
+
+      .anticon-loading {
+        color: $success-500 !important;
+      }
+
+      &.ant-btn {
+        span,
+        .icon {
+          color: $success-500;
+        }
+      }
+    }
+  }
+
+  &-info {
+    background: $info-500;
+    border-color: $info-500;
+
+    &:hover {
+      background: $info-400;
+      border-color: $info-400;
+    }
+
+    &:active {
+      background: $info-600;
+      border-color: $info-600;
+    }
+
+    &:focus {
+      border: 1px solid $info-700;
+      background: $info-600;
+      outline: $basic-500;
+    }
+
+    &#{$self}-outline {
+      background: $info-500-transparent-08;
+      border-color: transparent;
+
+      &:hover {
+        background: $info-500-transparent-16;
+        border-color: transparent;
+      }
+
+      &:active,
+      &:focus {
+        background: $info-500-transparent-24;
+        border-color: transparent;
+      }
+
+      &#{$self}-background-ghost {
+        background: transparent !important;
+
+        &:hover {
+          background: $basic-500-transparent-08 !important;
+        }
+
+        &:active {
+          background: $basic-500-transparent-16 !important;
+        }
+
+        &:focus {
+          background: $basic-500-transparent-16 !important;
+          border-color: $basic-500-transparent-40;
+          outline: $basic-500;
+        }
+      }
+
+      .anticon-loading {
+        color: $info-500 !important;
+      }
+
+      &.ant-btn {
+        span,
+        .icon {
+          color: #008ae0;
+        }
+      }
+    }
+  }
+
+  &-warning {
+    background: $warning-500;
+    border-color: $warning-500;
+
+    &:hover {
+      background: $warning-400;
+      border-color: $warning-400;
+    }
+
+    &:active {
+      background: $warning-600;
+      border-color: $warning-600;
+    }
+
+    &:focus {
+      border: 1px solid $warning-700;
+      background: $warning-600;
+      outline: $basic-500;
+    }
+
+    &#{$self}-outline {
+      background: $warning-500-transparent-08;
+      border-color: transparent;
+
+      &:hover {
+        background: $warning-500-transparent-16;
+        border-color: transparent;
+      }
+
+      &:active,
+      &:focus {
+        background: $warning-500-transparent-24;
+        border-color: transparent;
+      }
+
+      &#{$self}-background-ghost {
+        background: transparent !important;
+
+        &:hover {
+          background: $basic-500-transparent-08 !important;
+        }
+
+        &:active {
+          background: $basic-500-transparent-16 !important;
+        }
+
+        &:focus {
+          background: $basic-500-transparent-16 !important;
+          border-color: $basic-500-transparent-40;
+          outline: $basic-500;
+        }
+      }
+
+      .anticon-loading {
+        color: $warning-500 !important;
+      }
+
+      &.ant-btn {
+        span,
+        .icon {
+          color: #fca800;
+        }
+      }
+    }
+  }
+
+  &-danger {
+    background: $danger-500;
+    border-color: $danger-500;
+
+    &:hover {
+      background: $danger-400;
+      border-color: $danger-400;
+    }
+
+    &:active {
+      background: $danger-600;
+      border-color: $danger-600;
+    }
+
+    &:focus {
+      border: 1px solid $danger-700;
+      background: $danger-600;
+      outline: $danger-500;
+    }
+
+    &#{$self}-outline {
+      background: $danger-500-transparent-08;
+      border-color: transparent;
+
+      &:hover {
+        background: $danger-500-transparent-16;
+        border-color: transparent;
+      }
+
+      &:active,
+      &:focus {
+        background: $danger-500-transparent-24;
+        border-color: transparent;
+      }
+
+      &#{$self}-background-ghost {
+        background: transparent !important;
+
+        &:hover {
+          background: $basic-500-transparent-08 !important;
+        }
+
+        &:active {
+          background: $basic-500-transparent-16 !important;
+        }
+
+        &:focus {
+          background: $basic-500-transparent-16 !important;
+          border-color: $basic-500-transparent-40;
+          outline: $basic-500;
+        }
+      }
+
+      .anticon-loading {
+        color: $danger-500 !important;
+      }
+
+      &.ant-btn {
+        span,
+        .icon {
+          color: #f4402c;
+        }
+      }
+    }
+  }
+
+  &-icon {
+    background: transparent !important;
+    padding: 0;
+    min-width: auto !important;
+    border:none;
+    box-shadow: none;
+    height: auto;
+
+    .icon {
+      color: $basic-900 !important;
+
+      &:before {
+        font-size: 22px;
+      }
+    }
+
+    &:focus,
+    &:active,
+    &:hover {
+      background: transparent;
+      border:none !important;
+      box-shadow: none;
+      outline: 0;
+    }
+  }
+
+  &--no-text {
+    min-width: auto;
+  }
+
+  &[disabled] {
+    background: $basic-500-transparent-24 !important;
+    border-color: transparent !important;
+
+    span {
+      color: #dadde0 !important;
+    }
+
+    &:hover {
+      background: $basic-500-transparent-24 !important;
+      border-color: transparent !important;
+
+      span {
+        color: #dadde0 !important;
+      }
+    }
+  }
+
+  span {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 1.14;
+    letter-spacing: normal;
+    color: $white;
+  }
+
+  .anticon-loading {
+    font-size: 24px;
+  }
+
+  .icon {
+    color: $basic-100;
+
+    &:before {
+      font-size: 22px;
+    }
+  }
+
+  &.ant-btn--left-icon {
+    > span {
+      margin-left: 13px;
+    }
+  }
+
+  &.ant-btn--right-icon {
+    > span {
+      margin-right: 8px;
+    }
+  }
+
+  &.ant-btn-basic {
+    span {
+      color: $basic-900;
+    }
+  }
+
+  /*sizes*/
+
+  &-xs {
+    height: 24px;
+    min-width: 66px;
+
+    span {
+      font-size: 10px;
+    }
+
+    .anticon-loading,
+    .icon {
+      &:before {
+        font-size: 14px;
+      }
+    }
+  }
+
+  &-sm {
+    height: 32px;
+    min-width: 83px;
+
+    span {
+      font-size: 12px;
+    }
+
+    .anticon-loading,
+    .icon {
+      &:before {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &-lg {
+    height: 48px;
+    min-width: 108px;
+
+    span {
+      font-size: 16px;
+    }
+  }
+
+  &-xl {
+    height: 56px;
+    min-width: 124px;
+
+    .anticon-loading,
+    .icon {
+      font-size: 24px;
+    }
+
+    span {
+      font-size: 18px;
+    }
+  }
+
+  &--barcode {
+    position: absolute;
+    right: 48px;
+    top: 8px;
+    background: $basic-200;
+    border-radius: 4px !important;
+    box-shadow: 0 0 2px 0 rgba(14, 31, 53, 0.12);
+    border: 0;
+    border-radius: 4px;
+    padding: 6px 8px;
+    height: 30px;
+    z-index: 1;
+
+    &:hover,
+    &:focus,
+    &:active {
+      background: $basic-200;
+      box-shadow: 0 0 2px 0 rgba(14, 31, 53, 0.12);
+      border: 0;
+
+      .icon {
+        color: $basic-600;
+      }
+    }
+
+    .icon {
+      color: $basic-600;
+
+      &:before {
+        font-size: 18px;
+      }
+    }
+  }
+}

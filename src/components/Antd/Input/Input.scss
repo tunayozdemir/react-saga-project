@@ -1,0 +1,202 @@
+@import "src/assets/css/settings/colors";
+
+.ant-input {
+  $self: &;
+  border-color: $basic-300;
+  border-radius: 8px;
+  padding: 19px 16px 5px;
+  font-size: 14px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.71;
+  letter-spacing: normal;
+  color: $basic-900;
+  box-shadow: none !important;
+  &:hover {
+    background-color: $basic-500-transparent-16 !important;
+    border-color: $basic-300 !important;
+  }
+  &:focus {
+    box-shadow: none;
+    border-color: $primary-500;
+  }
+
+  &-disabled {
+    border-color: $basic-300;
+    background-color: $basic-100;
+    color: $basic-300;
+  }
+
+  &-status-success {
+    border-color: $success-500;
+    &:hover {
+      border-color: $success-500 !important;
+    }
+  }
+  &-status-error {
+    border-color: $danger-500 !important;
+    &:focus {
+      border-color: $danger-500 !important;
+    }
+    &:hover {
+      border-color: $danger-500 !important;
+    }
+  }
+  &-status-warning {
+    border-color: $warning-500 !important;
+    &:focus {
+      border-color: $warning-500 !important;
+    }
+    &:hover {
+      border-color: $warning-500 !important;
+    }
+  }
+  &-status-info {
+    border-color: $info-500 !important;
+    &:focus {
+      border-color: $info-500 !important;
+    }
+    &:hover {
+      border-color: $info-500 !important;
+    }
+  }
+
+  &-affix-wrapper {
+    border-color: $basic-300;
+    border-radius: 8px;
+    padding: 0 16px !important;
+    font-size: 14px;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    color: $basic-900;
+    box-shadow: none !important;
+    &:hover {
+      background-color: $basic-500-transparent-16 !important;
+      border-color: $basic-300 !important;
+      .ant-input {
+        background-color: transparent !important;
+      }
+      .ant-input-suffix {
+        background-color: transparent !important;
+      }
+    }
+    &:focus {
+      box-shadow: none;
+      border-color: $basic-500;
+      background-color: unset !important;
+      .ant-input {
+        background-color: unset;
+      }
+    }
+
+    .ant-input-suffix {
+      background-color: $white !important;
+      .icon {
+        font-size: 24px;
+        color: $basic-600;
+      }
+      .ant-btn {
+        &:last-child {
+          margin-left: 24px;
+        }
+      }
+    }
+
+    .ant-input {
+      padding: 19px 16px 5px 0 !important;
+      &-disabled {
+        border-color: $basic-300;
+        background-color: $basic-100;
+        color: $basic-300;
+      }
+      &:focus {
+        box-shadow: none;
+        border-color: $basic-500;
+        background-color: unset !important;
+      }
+      &-status-success {
+        border-color: $success-500 !important;
+        &:hover {
+          border-color: $success-500 !important;
+        }
+        .ant-input-suffix {
+          .icon {
+            color: $success-500 !important;
+          }
+        }
+      }
+      &-status-error {
+        border-color: $danger-500 !important;
+        &:focus {
+          border-color: $danger-500 !important;
+        }
+        &:hover {
+          border-color: $danger-500 !important;
+        }
+        .ant-input-suffix {
+          .icon {
+            color: $danger-500;
+          }
+        }
+      }
+      &-status-warning {
+        border-color: $warning-500 !important;
+        &:focus {
+          border-color: $warning-500 !important;
+        }
+        &:hover {
+          border-color: $warning-500 !important;
+        }
+        .ant-input-suffix {
+          .icon {
+            color: $warning-500;
+          }
+        }
+      }
+      &-status-info {
+        border-color: $info-500 !important;
+        &:focus {
+          border-color: $info-500 !important;
+        }
+        &:hover {
+          border-color: $info-500 !important;
+        }
+        .ant-input-suffix {
+          .icon {
+            color: $info-500;
+          }
+        }
+      }
+    }
+  }
+
+  &--without-floatlabel {
+    #{$self} {
+      padding: 12px 0 !important;
+
+      &::placeholder {
+        color: $basic-600;
+        font-size: 14px;
+        line-height: 1.29;
+        font-weight: normal;
+      }
+    }
+  }
+
+}
+
+/* chrome */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* firefox */
+input[type="number"] {
+  -moz-appearance: textfield;
+}
